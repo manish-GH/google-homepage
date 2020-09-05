@@ -1,0 +1,58 @@
+html {
+    height: 100%;
+    width: 100%;
+}
+
+#navbar {
+    display: grid;
+    grid-template-columns: 1fr 65px 65px 65px 65px;
+    grid-template-rows: 50px;
+    grid-template-areas: ". gmail images menu sign";
+    font-size: 13px;
+}
+
+#gmail {
+    grid-area: gmail;
+}
+#images {
+    grid-area: images;
+}
+#menu {
+    grid-area: menu;
+}
+#sign {
+    grid-area: sign;
+}
+
+#main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 150px 50px 50px 50px;
+    grid-template-areas: ". logo ."
+                         ". search ."
+                         ". google-buttons ."
+                         ". lang .";
+    align-items: center;
+}
+
+#logo {
+    grid-area: logo;
+    justify-self: center;
+}
+#search {
+    grid-area: search;
+}
+#google-buttons {
+    grid-area: google-buttons;
+    justify-self: center;
+}
+#search-button {
+    grid-area: search-button;
+}
+#random-button {
+    grid-area: random-button;
+}
+#lang {
+    grid-area: lang;
+    font-size: 13px;
+}
