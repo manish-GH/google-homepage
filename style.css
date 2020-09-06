@@ -3,6 +3,10 @@ html {
     width: 100%;
 }
 
+a {
+    text-decoration: none;
+}
+
 #navbar {
     display: grid;
     grid-template-columns: 1fr 65px 65px 65px 65px;
@@ -55,4 +59,36 @@ html {
 #lang {
     grid-area: lang;
     font-size: 13px;
+}
+
+#footer {
+    display:grid;
+    grid-template-columns: 100px 100px 100px 100px 1fr 100px 100px 100px;
+    grid-template-rows: 50px;
+    grid-template-areas: "advertising buisness about how . privacy terms settings";
+    font-size: 14px;
+    position: relative;
+    bottom: -150px;
+}
+
+#advertising {
+    grid-area: advertising;
+}
+#buisness {
+    grid-area: buisness;
+}
+#about {
+    grid-area: about;
+}
+#how {
+    grid-area: how;
+}
+#privacy {
+    grid-area: privacy;
+}
+#terms {
+    grid-area: terms;
+}
+#settings {
+    grid-area: settings;
 }
