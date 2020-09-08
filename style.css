@@ -3,52 +3,85 @@ html {
     width: 100%;
 }
 
-a {
+
+#navbar a {
     text-decoration: none;
+}
+
+#footer a {
+    text-decoration: none;
+    color: #5f6368;
 }
 
 #navbar {
     display: grid;
-    grid-template-columns: 1fr 65px 65px 65px 65px;
-    grid-template-rows: 50px;
+    grid-template-columns: 1fr 65px 65px 45px 65px;
+    grid-template-rows: 30px;
     grid-template-areas: ". gmail images menu sign";
     font-size: 13px;
 }
 
 #gmail {
     grid-area: gmail;
+    justify-self: center;
+    align-self: center;
+    color: black;
 }
 #images {
     grid-area: images;
+    justify-self: center;
+    align-self: center;
+    color: black;
 }
 #menu {
     grid-area: menu;
+    justify-self: center;
+    align-self: center;
+    color: black;
 }
 #sign {
     grid-area: sign;
+    background-color: #4683ea;
+    justify-self: center;
+    align-self: center;
+    height: 28px;
+    width: 65px;
+    line-height: 28px;
+    text-align: center;
+    color: white;
+    border: 1px solid #4285f4;
+    
 }
+
+
 
 #main {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 150px 50px 50px 50px;
+    grid-template-rows: 200px 70px 50px 50px;
     grid-template-areas: ". logo ."
                          ". search ."
                          ". google-buttons ."
                          ". lang .";
-    align-items: center;
+   
 }
 
 #logo {
     grid-area: logo;
     justify-self: center;
+    align-self: end;
 }
 #search {
     grid-area: search;
+    align-self: center;
+    height: 40px;
+    width: 500px;
+    border-radius: 30px;
 }
 #google-buttons {
     grid-area: google-buttons;
     justify-self: center;
+    align-self: center;
 }
 #search-button {
     grid-area: search-button;
@@ -59,6 +92,7 @@ a {
 #lang {
     grid-area: lang;
     font-size: 13px;
+    align-self: center;
 }
 
 #footer {
@@ -68,7 +102,7 @@ a {
     grid-template-areas: "advertising buisness about how . privacy terms settings";
     font-size: 14px;
     position: relative;
-    bottom: -150px;
+    bottom: -160px;
 }
 
 #advertising {
