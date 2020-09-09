@@ -2,7 +2,6 @@ html {
     height: 100%;
     width: 100%;
 }
-
 a {
     text-decoration: none;
 }
@@ -10,7 +9,7 @@ a:hover {
     text-decoration: underline;
 }
 
-
+/*Navbar*/
 #navbar {
     display: grid;
     grid-template-columns: 1fr 50px 50px 45px 8px 65px 15px;
@@ -53,7 +52,7 @@ a:hover {
 }
 
 
-
+/*Central or Main part*/
 #main {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -65,7 +64,6 @@ a:hover {
     font-family: arial,sans-serif;
    
 }
-
 
 #logo {
     grid-area: logo;
@@ -145,6 +143,10 @@ a:hover {
     grid-area: loc;
 }
 
+/*Footer*/
+#footer a {
+    color: #5f6368;
+}
 #footer {
     display: grid;
     grid-template-columns: 90px 90px 90px 140px 1fr 80px 80px 80px;
@@ -181,6 +183,4 @@ a:hover {
     grid-area: settings;
 }
 
-#footer a {
-    color: #5f6368;
-}
+
