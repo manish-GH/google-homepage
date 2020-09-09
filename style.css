@@ -66,6 +66,7 @@ a:hover {
    
 }
 
+
 #logo {
     grid-area: logo;
     justify-self: center;
@@ -77,6 +78,14 @@ a:hover {
     height: 40px;
     width: 560px;
     border-radius: 30px;
+    border: 1px solid rgba(170, 165, 165, 0.89);
+    
+}
+#search:hover {
+    box-shadow: 1px 1px 5px grey;
+}
+#search:focus {
+    box-shadow: 1px 1px 5px grey;
 }
 #google-buttons {
     grid-area: google-buttons;
@@ -87,10 +96,24 @@ a:hover {
 #search-button {
     grid-area: search-button;
     height: 30px;
+    border: none;
+    background-color: #f1f1f1;
 }
 #random-button {
     grid-area: random-button;
     height: 30px;
+    border: none;
+    background-color: #f1f1f1;
+}
+#search-button:hover {
+    border: 1px solid rgba(112, 107, 107, 0.644);
+    color: black;
+    background-color: rgb(250, 243, 243);
+}
+#random-button:hover {
+    border: 1px solid rgba(112, 107, 107, 0.644);
+    color: black;
+    background-color: rgb(250, 243, 243);
 }
 #lang {
     grid-area: lang;
@@ -131,7 +154,6 @@ a:hover {
     background: #f2f2f2;
     text-align: center;
     line-height: 40px;
-    
     font-family: arial,sans-serif;
 }
 
